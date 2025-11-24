@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen ">
+    <div className="relative h-[50vh] sm:h-screen overflow-hidden"> 
       {/* Images */}
       <div
         className="flex h-full w-full transition-transform duration-700 ease-in-out"

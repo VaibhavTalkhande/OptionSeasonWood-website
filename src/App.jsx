@@ -11,9 +11,14 @@ import AboutUs from "./Pages/AboutUs";
 import Gallery from "./Pages/Gallery";
 import Products from "./Pages/Products";
 import ContactUs from "./Pages/ContactUs";
+import { LoaderProvider } from "./context/LoaderContext";
+import LoaderWrapper from "./components/LoadWrapper";
 const App = () => {
   return (
     <BrowserRouter>
+      <LoaderProvider>
+        <LoaderWrapper>
+
       <Navbar />
       <div className="pt-[100px] md:pt-[150px]">
         <Routes>
@@ -27,6 +32,8 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      </LoaderWrapper>
+      </LoaderProvider>
     </BrowserRouter>
   );
 };

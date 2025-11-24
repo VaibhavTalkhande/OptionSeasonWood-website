@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import About from '../components/About'
 const AboutUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   return (
-    <div>AboutUs</div>
+    <div>
+        <About/>
+    </div>
   )
 }
 

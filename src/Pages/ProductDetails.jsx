@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { productData } from "../data/productData";
@@ -9,6 +9,9 @@ export default function ProductDetails() {
   const navigate = useNavigate();
 
   const product = productData[slug];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!product) {
     return (
@@ -44,13 +47,13 @@ export default function ProductDetails() {
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 mb-6 text-[#2C1A7A] hover:text-[#D98539] transition font-semibold"
+          className="flex items-center gap-2 mb-6 text-[#C4793F] hover:text-[#D98539] transition font-semibold"
         >
           <ArrowLeft size={22} /> Back
         </button>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-[#2C1A7A] mb-3">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#C4793F] mb-3">
           {product.title}
         </h1>
 
@@ -84,7 +87,7 @@ export default function ProductDetails() {
           <div className="bg-white rounded-xl p-6 md:p-8 shadow">
 
             {/* Overview */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#2C1A7A] mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#D98539] mb-4">
               Overview
             </h2>
 

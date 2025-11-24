@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 export default function Products() {
@@ -7,6 +7,9 @@ export default function Products() {
   const cratesRef = useRef(null);
   const refurbishedRef = useRef(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const scrollTo = (ref) => {
     if (!ref.current) return;
     const offset = 150;
@@ -77,7 +80,7 @@ export default function Products() {
 
       {/* ------------------ INTRO SECTION (Responsive like screenshot) ------------------ */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <h1 className="text-5xl font-bold text-[#2C1A7A] mb-6">Products</h1>
+        <h1 className="text-5xl font-bold text-[#C4793F] mb-6">Products</h1>
 
         {/* Buttons */}
         {/* Category Buttons */}
@@ -86,7 +89,7 @@ export default function Products() {
 
             <button
             onClick={() => scrollTo(epalRef)}
-            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] 
+            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             EPAL Pallets
@@ -94,7 +97,7 @@ export default function Products() {
 
             <button
             onClick={() => scrollTo(woodenRef)}
-            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] 
+            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             Wooden Pallets
@@ -102,7 +105,7 @@ export default function Products() {
 
             <button
             onClick={() => scrollTo(cratesRef)}
-            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] 
+            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             Crates & Boxes
@@ -110,7 +113,7 @@ export default function Products() {
 
             <button
             onClick={() => scrollTo(refurbishedRef)}
-            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] 
+            className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             Refurbished
@@ -147,15 +150,14 @@ export default function Products() {
 
       {/* ------------------ EPAL ------------------ */}
       <section ref={epalRef} className="max-w-7xl mx-auto px-6 mt-20">
-        <h2 className="text-4xl font-bold text-[#2C1A7A] mb-10">EPAL Pallets</h2>
+        <h2 className="text-4xl font-bold text-[#C4793F] mb-10">EPAL Pallets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {epalProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>
       </section>
-
       {/* ------------------ WOODEN ------------------ */}
       <section ref={woodenRef} className="max-w-7xl mx-auto px-6 mt-24">
-        <h2 className="text-4xl font-bold text-[#2C1A7A] mb-10">Wooden Pallets</h2>
+        <h2 className="text-4xl font-bold text-[#C4793F] mb-10">Wooden Pallets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {woodenProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>
@@ -163,7 +165,7 @@ export default function Products() {
 
       {/* ------------------ CRATES ------------------ */}
       <section ref={cratesRef} className="max-w-7xl mx-auto px-6 mt-24">
-        <h2 className="text-4xl font-bold text-[#2C1A7A] mb-10">Wooden Crates & Boxes</h2>
+        <h2 className="text-4xl font-bold text-[#C4793F] mb-10">Wooden Crates & Boxes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {cratesProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>
@@ -171,7 +173,7 @@ export default function Products() {
 
       {/* ------------------ REFURBISHED ------------------ */}
       <section ref={refurbishedRef} className="max-w-7xl mx-auto px-6 mt-24 mb-32">
-        <h2 className="text-4xl font-bold text-[#2C1A7A] mb-10">Refurbished Pallets</h2>
+        <h2 className="text-4xl font-bold text-[#C4793F] mb-10">Refurbished Pallets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {refurbishedProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>

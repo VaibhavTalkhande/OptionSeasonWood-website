@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import img from "../assets/logo.png"; 
+import { Link, Links } from "react-router-dom";
+import img from "../assets/logo1.png"; 
 import { Menu, X, Warehouse, Award } from "lucide-react";
 
 export default function Navbar() {
@@ -15,10 +15,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full top-0 left-0 z-50 bg-white shadow">
+    <header className="w-full fixed top-0 left-0 z-50 bg-white shadow">
 
         {/* ----------- TOP BAR FOR LARGE SCREENS ONLY ----------- */}
-        <div className="hidden xl:flex w-full bg-white text-gray-700 justify-between items-center px-6 py-2 text-sm">
+        <div className="hidden lg:flex w-full bg-white text-gray-700 justify-between items-center px-6 py-2 text-sm">
         <span className="font-medium">OPTION SEASON WOOD COMPANY</span>
 
         <span className="flex gap-2">
@@ -30,8 +30,8 @@ export default function Navbar() {
 
 
         {/* ----------- TOP BAR FOR MOBILE ONLY ----------- */}
-        <div className="w-full lg:hidden bg-gray-100 py-1 text-center text-xs text-gray-700">
-        Est. 1966 | EPAL IND-006 & IND-016 | ISO 9001:2015
+        <div className="w-full lg:hidden bg-white py-1 text-center text-xs text-gray-700">
+        Est. 2008 | IN-758 HT |  GSTIN 27AEEPP3996C1Z9
         </div>
 
 
@@ -40,9 +40,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
           {/* LOGO */}
-          <div className="flex items-center">
-            <img src={img} alt="Option Season Wood" className="h-14 sm:h-16 w-auto" />
-          </div>
+          <Link to={"/"}>
+            <div className="flex items-center">
+                <img src={img} alt="Option Season Wood" className="h-9 sm:h-12 w-auto" />
+            </div>
+          </Link>
 
           {/* CERTIFICATIONS (Desktop Only) */}
           <div className="hidden md:flex items-center gap-8 text-gray-700">
@@ -52,7 +54,7 @@ export default function Navbar() {
               <Warehouse className="h-10 w-10 text-gray-600" />
               <div className="text-sm">
                 Established <br />
-                <span className="text-orange-600 font-semibold">in year 1966</span>
+                <span className="text-orange-600 font-semibold">in year 2012</span>
               </div>
             </div>
 
@@ -60,11 +62,10 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               <Award className="h-10 w-10 text-gray-600" />
               <div className="text-sm">
-                EPAL <span className="text-orange-600 font-semibold">IND-006</span> &{" "}
-                <span className="text-orange-600 font-semibold">IND-016</span>
+                IN-<span className="text-orange-600 font-semibold">758 HT</span> &{" "}
                 <br />
-                Certified{" "}
-                <span className="text-orange-600 font-semibold">ISO 9001:2015</span>
+                GST- 
+                <span className="text-orange-600 font-semibold">27AEEPP3996C1Z9</span>
               </div>
             </div>
 
@@ -81,11 +82,11 @@ export default function Navbar() {
       </div>
 
       {/* ------------ NAVIGATION BAR (Desktop) ------------ */}
-      <nav className="hidden md:flex w-full bg-gray-800">
+      <nav className="hidden md:flex w-full bg-[#C4793F]">
         <ul className="max-w-7xl mx-auto flex items-start gap-12 px-6 py-3 text-white text-lg font-semibold">
           {navItems.map((item) => (
             <li key={item.name}>
-              <Link to={item.path} className="hover:text-orange-500 transition">
+              <Link to={item.path} className="hover:text-black transition">
                 {item.name}
               </Link>
             </li>
@@ -108,7 +109,7 @@ export default function Navbar() {
         }`}
       >
         {/* Close Button */}
-        <div className="flex justify-between items-center bg-gray-800 text-white px-4 py-3">
+        <div className="flex justify-between items-center bg-[#C4793F] text-white px-4 py-3">
           <h2 className="text-lg font-bold">Menu</h2>
           <button onClick={() => setOpen(false)}>
             <X size={28} />
@@ -122,7 +123,7 @@ export default function Navbar() {
               <Link
                 to={item.path}
                 onClick={() => setOpen(false)}
-                className="block hover:text-orange-600 transition"
+                className="block hover:text-[#C4793F] transition"
               >
                 {item.name}
               </Link>

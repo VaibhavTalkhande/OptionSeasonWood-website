@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
@@ -28,11 +28,13 @@ export default function Gallery() {
   const showNext = () => {
     setSelectedIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="max-w-7xl relative mx-auto px-6 py-20">
       {/* ------------ Page Heading ------------ */}
-      <h1 className="text-5xl font-bold text-[#2C1A7A] mb-6">Media Gallery</h1>
+      <h1 className="text-5xl font-bold text-[#C4793F] mb-6">Media Gallery</h1>
       <p className="text-gray-600 text-lg max-w-3xl mb-12">
         A gist of our packaging and logistics empire, showcasing our
         infrastructure, high-tech facilities, and production capabilities.
