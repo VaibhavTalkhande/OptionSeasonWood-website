@@ -362,18 +362,30 @@ export default function Home() {
             { icon: <Warehouse size={50} />, title: "6+ Acre Facilities", desc: "Large operational manufacturing zones." }
           ].map((item, idx) => (
             <motion.div
-              key={idx}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.12 }}
-              className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl hover:scale-105 transition"
+            key={idx}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: idx * 0.12 }}
+
+            className="
+                bg-white p-8 rounded-xl shadow-md 
+                flex flex-col items-center justify-center text-center
+                hover:shadow-xl hover:scale-105 transition
+            "
             >
-              <div className="text-[#C4793F] mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-lg" style={{ color: primary }}>{item.title}</h3>
-              <p className="text-gray-600 mt-2 text-sm">{item.desc}</p>
+            <div className="text-[#C4793F] mb-4 flex items-center justify-center">
+                {item.icon}
+            </div>
+
+            <h3 className="font-semibold text-lg" style={{ color: primary }}>
+                {item.title}
+            </h3>
+
+            <p className="text-gray-600 mt-2 text-sm">{item.desc}</p>
             </motion.div>
+
           ))}
         </div>
 
