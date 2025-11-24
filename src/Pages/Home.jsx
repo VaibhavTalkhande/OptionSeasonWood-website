@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 import { Truck, ClipboardCheck, Package, Award, Boxes, Users, Warehouse } from "lucide-react";
 import logoUrl from "../assets/logo.png";
 import heroImageUrl from "../assets/gallery/1.jpeg";
-    
+import europalletthumb from "../assets/products/epal-euro-1-thumb.jpg";
+import woodenpalletthumb from "../assets/products/reversible-pallet-1-thumb.jpg";
+import cratethumb from "../assets/products/wooden-crate-1-thumb.jpg";
+import refurbishedthumb from "../assets/products/refurbished-pallet-1.jpg";
+
 export default function Home() {
   const productsRef = useRef(null);
   const qualityRef = useRef(null);
@@ -87,7 +91,7 @@ export default function Home() {
             >
               <button
                 onClick={() => scrollTo(productsRef)}
-                className="px-1.5 sm:px-7 py-3 rounded-lg font-semibold shadow-md transition hover:shadow-xl"
+                className="px-1.5 sm:px-7 py-3 rounded-lg cursor-pointer font-semibold shadow-md transition hover:shadow-xl"
                 style={{ background: primary, color: "white" }}
               >
                 Explore Products
@@ -95,7 +99,7 @@ export default function Home() {
 
               <button
                 onClick={() => scrollTo(qualityRef)}
-                className="px-1.5 sm:px-7 py-3 rounded-lg font-semibold border-2 transition hover:bg-[#C4793F]/10"
+                className="px-1.5 sm:px-7 py-3 cursor-pointer rounded-lg font-semibold border-2 transition hover:bg-[#C4793F]/10"
                 style={{ borderColor: accent, color: accent }}
               >
                 Quality Standards
@@ -275,10 +279,10 @@ export default function Home() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { title: "EPAL Pallets", img: "/src/assets/products/epal-euro-1-thumb.jpg", href: "/products#epal" },
-            { title: "Wooden Pallets", img: "/src/assets/products/reversible-pallet-1-thumb.jpg", href: "/products#wooden" },
-            { title: "Crates & Boxes", img: "/src/assets/products/wooden-crate-1-thumb.jpg", href: "/products#crates" },
-            { title: "Refurbished Pallets", img: "/src/assets/products/refurbished-pallet-1.jpg", href: "/products#refurbished" },
+            { title: "EPAL Pallets", img: europalletthumb , href: "/products" },
+            { title: "Wooden Pallets", img: woodenpalletthumb, href: "/products" },
+            { title: "Crates & Boxes", img: cratethumb, href: "/products" },
+            { title: "Refurbished Pallets", img: refurbishedthumb, href: "/products" },
           ].map((p, idx) => (
             <motion.div
               key={idx}
