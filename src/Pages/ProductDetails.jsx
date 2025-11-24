@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 import { productData } from "../data/productData";
 
 export default function ProductDetails() {
@@ -32,16 +31,6 @@ export default function ProductDetails() {
 
   return (
     <>
-      {/* SEO */}
-      <Helmet>
-        <title>{product.title} | Option Season Wood</title>
-        <meta name="description" content={product.description?.[0] || "Premium wooden pallets"} />
-        <meta name="keywords" content={`${product.title}, pallets, wooden pallets, EPAL pallets`} />
-        <meta property="og:title" content={product.title} />
-        <meta property="og:description" content={product.description?.[0] || ""} />
-        <meta property="og:image" content={product.main} />
-      </Helmet>
-
       <section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
 
         {/* Back Button */}
