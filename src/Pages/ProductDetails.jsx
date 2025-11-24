@@ -36,7 +36,7 @@ export default function ProductDetails() {
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 mb-6 text-[#C4793F] hover:text-[#D98539] transition font-semibold"
+          className="flex items-center cursor-pointer gap-2 mb-6 text-[#C4793F] hover:text-[#D98539] transition font-semibold"
         >
           <ArrowLeft size={22} /> Back
         </button>

@@ -4,6 +4,7 @@ import {
   MapPin,
   MessageCircle,
 } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const primary = "#94592C";
 const accent = "#C4793F";
@@ -18,7 +19,7 @@ export default function Footer() {
         {/* ------------------------------------------------ */}
         <div>
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             alt="Open Season Wood"
             className="w-28 sm:w-32 md:w-40 object-contain mb-4"
           />

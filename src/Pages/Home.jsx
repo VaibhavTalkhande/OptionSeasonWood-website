@@ -3,10 +3,9 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Truck, ClipboardCheck, Package, Award, Boxes, Users, Warehouse } from "lucide-react";
-
-const logoUrl = "/src/assets/logo.png";
-const heroImageUrl = "/src/assets/gallery/1.jpeg";
-
+import logoUrl from "../assets/logo.png";
+import heroImageUrl from "../assets/gallery/1.jpeg";
+    
 export default function Home() {
   const productsRef = useRef(null);
   const qualityRef = useRef(null);

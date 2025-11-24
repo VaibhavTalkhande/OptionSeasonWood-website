@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-
+import one from "../assets/gallery/1.jpeg";
+import two from "../assets/gallery/2.jpeg";
+import three from "../assets/gallery/3.jpeg";
+import four from "../assets/gallery/4.jpeg";
+import five from "../assets/gallery/5.jpeg";
+import six from "../assets/gallery/6.jpeg";
 const images = [
-  "src\\assets\\gallery\\1.jpeg",
-  "src\\assets\\gallery\\2.jpeg",
-  "src\\assets\\gallery\\3.jpeg",
-  "src\\assets\\gallery\\4.jpeg",
-  "src\\assets\\gallery\\5.jpeg",
-  "src\\assets\\gallery\\6.jpeg",
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
 ];
 
 export default function Gallery() {

@@ -1,5 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import productmain from "../assets/products/products-main.jpg";
+import epaleuro1 from "../assets/products/epal-euro-1-thumb.jpg";
+import cp1pallet1 from "../assets/products/cp1-pallet-1-thumb.jpg";
+import cp3pallet1 from "../assets/products/cp3-pallet-1-thumb.jpg";
+import cp9pallet1 from "../assets/products/cp9-pallet-1-thumb.jpg";
+import cp2pallet1 from "../assets/products/cp2-pallet-1-thumb.jpg";
+import cp4pallet1 from "../assets/products/cp4-pallet-1-thumb.jpg";
+import cp5pallet1 from "../assets/products/cp5-pallet-1-thumb.jpg";
+import cp6pallet1 from "../assets/products/cp6-pallet-1-thumb.jpg";
+import cp7pallet1 from "../assets/products/cp7-pallet-1-thumb.jpg";
+import cp8pallet1 from "../assets/products/cp8-pallet-1-thumb.jpg";
+import gmapallet1 from "../assets/products/gma-pallet-1-thumb.jpg";
+import twowaypallet1 from "../assets/products/2way-pallet-1-thumb.jpg";
+import fourwaypallet1 from "../assets/products/4way-pallet-1-thumb.jpg";
+import nonreversiblepallet1 from "../assets/products/non-reversible-pallet-1-thumb.jpg";
+import reversiblepallet1 from "../assets/products/reversible-pallet-1-thumb.jpg";
+import woodencrate1 from "../assets/products/wooden-crate-1-thumb.jpg";
+import palletcolor from "../assets/products/pallet-collar-1-thumb.jpg";
+import refurbishedpallet1 from "../assets/products/refurbished-pallet-1.jpg";
 
 export default function Products() {
   const epalRef = useRef(null);
@@ -20,33 +39,33 @@ export default function Products() {
   /* ------------------ PRODUCT DATA ------------------ */
 
   const epalProducts = [
-    { name: "EPAL EURO Pallets", size: "(800 x 1200 x 144 mm)", image: "/src/assets/products/epal-euro-1-thumb.jpg", slug: "epal-euro" },
-    { name: "EPAL CP1 Pallets", size: "(1000 x 1200 x 138 mm)", image: "/src/assets/products/cp1-pallet-1-thumb.jpg", slug: "cp1-pallet" },
-    { name: "EPAL CP3 Pallets", size: "(1140 x 1140 x 138 mm)", image: "/src/assets/products/cp3-pallet-1-thumb.jpg", slug: "cp3-pallet" },
-    { name: "EPAL CP9 Pallets", size: "(1140 x 1140 x 156 mm)", image: "/src/assets/products/cp9-pallet-1-thumb.jpg", slug: "cp9-pallet" },
+    { name: "EPAL EURO Pallets", size: "(800 x 1200 x 144 mm)", image: epaleuro1, slug: "epal-euro" },
+    { name: "EPAL CP1 Pallets", size: "(1000 x 1200 x 138 mm)", image: cp1pallet1, slug: "cp1-pallet" },
+    { name: "EPAL CP3 Pallets", size: "(1140 x 1140 x 138 mm)", image: cp3pallet1, slug: "cp3-pallet" },
+    { name: "EPAL CP9 Pallets", size: "(1140 x 1140 x 156 mm)", image: cp9pallet1, slug: "cp9-pallet" },
   ];
 
   const woodenProducts = [
-    { name: "CP2 Pallets", size: "(800 x 1200 x 141 mm)", image: "/src/assets/products/cp2-pallet-1-thumb.jpg", slug: "cp2-pallet" },
-    { name: "CP4 Pallets", size: "(1100 x 1300 x 138 mm)", image: "/src/assets/products/cp4-pallet-1-thumb.jpg", slug: "cp4-pallet" },
-    { name: "CP5 Pallets", size: "(760 x 1140 x 138 mm)", image: "/src/assets/products/cp5-pallet-1-thumb.jpg", slug: "cp5-pallet" },
-    { name: "CP6 Pallets", size: "(1000 x 1200 x 156 mm)", image: "/src/assets/products/cp6-pallet-1-thumb.jpg", slug: "cp6-pallet" },
-    { name: "CP7 Pallets", size: "(1100 x 1300 x 156 mm)", image: "/src/assets/products/cp7-pallet-1-thumb.jpg", slug: "cp7-pallet" },
-    { name: "CP8 Pallets", size: "(1140 x 1140 x 156 mm)", image: "/src/assets/products/cp8-pallet-1-thumb.jpg", slug: "cp8-pallet" },
-    { name: "GMA Pallets", size: "", image: "/src/assets/products/gma-pallet-1-thumb.jpg", slug: "gma-pallet" },
-    { name: "2 Way Pallets", size: "", image: "/src/assets/products/2way-pallet-1-thumb.jpg", slug: "2way-pallet" },
-    { name: "4 Way Pallets", size: "", image: "/src/assets/products/4way-pallet-1-thumb.jpg", slug: "4way-pallet" },
-    { name: "Non-Reversible Pallets", size: "", image: "/src/assets/products/non-reversible-pallet-1-thumb.jpg", slug: "non-reversible-pallet" },
-    { name: "Reversible Pallets", size: "", image: "/src/assets/products/reversible-pallet-1-thumb.jpg", slug: "reversible-pallet" },
+    { name: "CP2 Pallets", size: "(800 x 1200 x 141 mm)", image: cp2pallet1, slug: "cp2-pallet" },
+    { name: "CP4 Pallets", size: "(1100 x 1300 x 138 mm)", image: cp4pallet1, slug: "cp4-pallet" },
+    { name: "CP5 Pallets", size: "(760 x 1140 x 138 mm)", image: cp5pallet1, slug: "cp5-pallet" },
+    { name: "CP6 Pallets", size: "(1000 x 1200 x 156 mm)", image: cp6pallet1, slug: "cp6-pallet" },
+    { name: "CP7 Pallets", size: "(1100 x 1300 x 156 mm)", image: cp7pallet1, slug: "cp7-pallet" },
+    { name: "CP8 Pallets", size: "(1140 x 1140 x 156 mm)", image: cp8pallet1, slug: "cp8-pallet" },
+    { name: "GMA Pallets", size: "", image: gmapallet1, slug: "gma-pallet" },
+    { name: "2 Way Pallets", size: "", image: twowaypallet1, slug: "2way-pallet" },
+    { name: "4 Way Pallets", size: "", image: fourwaypallet1, slug: "4way-pallet" },
+    { name: "Non-Reversible Pallets", size: "", image: nonreversiblepallet1, slug: "non-reversible-pallet" },
+    { name: "Reversible Pallets", size: "", image: reversiblepallet1, slug: "reversible-pallet" },
   ];
 
   const cratesProducts = [
-    { name: "Wooden Crates", image: "/src/assets/products/wooden-crate-1-thumb.jpg", slug: "wooden-crates" },
-    { name: "Pallet Collar / Boxes", image: "/src/assets/products/pallet-collar-1-thumb.jpg", slug: "pallet-collar" },
+    { name: "Wooden Crates", image: woodencrate1, slug: "wooden-crates" },
+    { name: "Pallet Collar / Boxes", image: palletcolor, slug: "pallet-collar" },
   ];
 
   const refurbishedProducts = [
-    { name: "Refurbished Pallets", image: "/src/assets/products/refurbished-pallet.jpg", slug: "refurbished-pallets" },
+    { name: "Refurbished Pallets", image: refurbishedpallet1, slug: "refurbished-pallets" },
   ];
 
   /* ------------------ PRODUCT CARD ------------------ */
@@ -141,7 +160,7 @@ export default function Products() {
           </div>
 
           <img
-            src="/src/assets/products/products-main.jpg"
+            src={productmain}
             className="rounded-lg shadow-md object-cover w-full h-64 md:h-72"
             alt="Products"
           />

@@ -1,12 +1,66 @@
+import epaleuro1thumb from "../assets/products/epal-euro-1-thumb.jpg";
+import epaleuro1 from "../assets/products/epal-euro-1.jpg";
+import epaleuro2 from "../assets/products/epal-euro-2.jpg";
+import epaleuro3 from "../assets/products/epal-euro-3.jpg";
+import epaleuro4 from "../assets/products/epal-euro-4.jpg";
+import cp1pallet1thumb from "../assets/products/cp1-pallet-1-thumb.jpg";
+import cp1pallet1 from "../assets/products/cp1-pallet-1.jpg";
+import cp1pallet2 from "../assets/products/cp1-pallet-2.jpg";
+import cp1pallet3 from "../assets/products/cp1-pallet-3.jpg";
+import cp1pallet4 from "../assets/products/cp1-pallet-4.jpg";
+import cp3pallet1thumb from "../assets/products/cp3-pallet-1-thumb.jpg";
+import cp3pallet1 from "../assets/products/cp3-pallet-1.jpg";
+import cp3pallet2 from "../assets/products/cp3-pallet-2.jpg";
+import cp3pallet3 from "../assets/products/cp3-pallet-3.jpg";
+import cp3pallet4 from "../assets/products/cp3-pallet-4.jpg";
+import cp9pallet1 from "../assets/products/cp9-pallet-1.jpg";
+import cp9pallet2 from "../assets/products/cp9-pallet-2.jpg";
+import cp9pallet3 from "../assets/products/cp9-pallet-3.jpg";
+import cp9pallet4 from "../assets/products/cp9-pallet-4.jpg";
+import cp2pallet1 from "../assets/products/cp2-pallet-1.jpg";
+import cp2pallet2 from "../assets/products/cp2-pallet-2.jpg";
+import cp2pallet3 from "../assets/products/cp2-pallet-3.jpg";
+import cp2pallet4 from "../assets/products/cp2-pallet-4.jpg";
+import cp4pallet1 from "../assets/products/cp4-pallet-1.jpg";
+import cp4pallet2 from "../assets/products/cp4-pallet-2.jpg";
+import cp4pallet3 from "../assets/products/cp4-pallet-3.jpg";
+import cp4pallet4 from "../assets/products/cp4-pallet-4.jpg";
+import cp5pallet1 from "../assets/products/cp5-pallet-1.jpg";
+import cp5pallet2 from "../assets/products/cp5-pallet-2.jpg";
+import cp5pallet3 from "../assets/products/cp5-pallet-3.jpg";
+import cp5pallet4 from "../assets/products/cp5-pallet-4.jpg";
+import cp6pallet1 from "../assets/products/cp6-pallet-1.jpg";
+import cp6pallet2 from "../assets/products/cp6-pallet-2.jpg";
+import cp6pallet3 from "../assets/products/cp6-pallet-3.jpg";
+import cp6pallet4 from "../assets/products/cp6-pallet-4.jpg";
+import cp7pallet1 from "../assets/products/cp7-pallet-1.jpg";
+import cp7pallet2 from "../assets/products/cp7-pallet-2.jpg";
+import cp7pallet3 from "../assets/products/cp7-pallet-3.jpg";
+import cp7pallet4 from "../assets/products/cp7-pallet-4.jpg";
+import cp8pallet1thumb from "../assets/products/cp8-pallet-1-thumb.jpg";
+import cp8pallet2 from "../assets/products/cp8-pallet-2.jpg";
+import cp8pallet3 from "../assets/products/cp8-pallet-3.jpg";
+import cp8pallet4 from "../assets/products/cp8-pallet-4.jpg";
+import gmapallet1 from "../assets/products/gma-pallet-1.jpg";
+import twowaypallet1 from "../assets/products/2way-pallet-1.jpg";
+import fourwaypallet1 from "../assets/products/4way-pallet-1.jpg";
+import nonreversiblepallet1 from "../assets/products/non-reversible-pallet-1.jpg";
+import reversiblepallet1 from "../assets/products/reversible-pallet-1.jpg";
+import woodencrate1 from "../assets/products/wooden-crate-1.jpg";
+import woodencrate2 from "../assets/products/wooden-crate-2.jpg";
+import woodencrate3 from "../assets/products/wooden-crate-3.jpg";
+import woodencrate4 from "../assets/products/wooden-boxes-1.jpg";
+import palletcolor from "../assets/products/pallet-collar-1.jpg";
+import refurbishedpallet1 from "../assets/products/refurbished-pallet-1.jpg";
 export const productData = {
     "epal-euro": {
         title: "EPAL EURO Pallets",
-        main: "/src/assets/products/epal-euro-1-thumb.jpg",
+        main: epaleuro1,
         gallery: [
-        "/src/assets/products/epal-euro-1.jpg",
-        "/src/assets/products/epal-euro-2.jpg",
-        "/src/assets/products/epal-euro-3.jpg",
-        "/src/assets/products/epal-euro-4.jpg",
+        epaleuro1,
+        epaleuro2,
+        epaleuro3,
+        epaleuro4
         ],
         description: [
         "EURO pallets - EPAL standardized heat treated pallets for freight, warehousing and display of goods in the European Union countries and worldwide.",
@@ -34,13 +88,13 @@ export const productData = {
     },
     "cp1-pallet": {
     title: "EPAL CP1 Pallets",
-    main: "/src/assets/products/cp1-pallet-1-thumb.jpg",
+    main: cp1pallet1thumb,
 
     gallery: [
-        "/src/assets/products/cp1-pallet-1.jpg",
-        "/src/assets/products/cp1-pallet-2.jpg",
-        "/src/assets/products/cp1-pallet-3.jpg",
-        "/src/assets/products/cp1-pallet-4.jpg"
+        cp1pallet1,
+        cp1pallet2,
+        cp1pallet3,
+        cp1pallet4
     ],
 
     description: [
@@ -72,13 +126,13 @@ export const productData = {
     },
     "cp3-pallet": {
     title: "EPAL CP3 Pallets",
-    main: "/src/assets/products/cp3-pallet-1-thumb.jpg",
+    main: cp3pallet1thumb,
 
     gallery: [
-        "/src/assets/products/cp3-pallet-1-thumb.jpg",
-        "/src/assets/products/cp3-pallet-2.jpg",
-        "/src/assets/products/cp3-pallet-3.jpg",
-        "/src/assets/products/cp3-pallet-4.jpg"
+        cp3pallet1,
+        cp3pallet2,
+        cp3pallet3,
+        cp3pallet4
     ],
 
     description: [
@@ -111,13 +165,13 @@ export const productData = {
     },
     "cp9-pallet": {
   title: "EPAL CP9 Pallets",
-  main: "/src/assets/products/cp9-pallet-1.jpg",
+  main: cp9pallet1,
 
-  gallery: [
-    "/src/assets/products/cp9-pallet-1.jpg",
-    "/src/assets/products/cp9-pallet-2.jpg",
-    "/src/assets/products/cp9-pallet-3.jpg",
-    "/src/assets/products/cp9-pallet-4.jpg"
+    gallery: [
+        cp9pallet1,
+        cp9pallet2,
+        cp9pallet3,
+        cp9pallet4
   ],
 
   description: [
@@ -149,13 +203,13 @@ export const productData = {
     },
     "cp2-pallet": {
     title: "CP2 Pallets",
-    main: "/src/assets/products/cp2-pallet-1.jpg",
+    main: cp2pallet1,
 
     gallery: [
-        "/src/assets/products/cp2-pallet-1.jpg",
-        "/src/assets/products/cp2-pallet-2.jpg",
-        "/src/assets/products/cp2-pallet-3.jpg",
-        "/src/assets/products/cp2-pallet-4.jpg"
+        cp2pallet1,
+        cp2pallet2,
+        cp2pallet3,
+        cp2pallet4
     ],
 
     description: [
@@ -187,13 +241,13 @@ export const productData = {
     },
     "cp4-pallet": {
     title: "CP4 Pallets",
-    main: "/src/assets/products/cp4-pallet-1.jpg",
+    main: cp4pallet1,
 
     gallery: [
-        "/src/assets/products/cp4-pallet-1.jpg",
-        "/src/assets/products/cp4-pallet-2.jpg",
-        "/src/assets/products/cp4-pallet-3.jpg",
-        "/src/assets/products/cp4-pallet-4.jpg"
+        cp4pallet1,
+        cp4pallet2,
+        cp4pallet3,
+        cp4pallet4
     ],
 
     description: [
@@ -225,13 +279,13 @@ export const productData = {
     },
     "cp5-pallet": {
     title: "CP5 Pallets",
-    main: "/src/assets/products/cp5-pallet-1.jpg",
+    main: cp5pallet1,
 
     gallery: [
-        "/src/assets/products/cp5-pallet-1.jpg",
-        "/src/assets/products/cp5-pallet-2.jpg",
-        "/src/assets/products/cp5-pallet-3.jpg",
-        "/src/assets/products/cp5-pallet-4.jpg"
+        cp5pallet1,
+        cp5pallet2,
+        cp5pallet3,
+        cp5pallet4
     ],
 
     description: [
@@ -258,13 +312,13 @@ export const productData = {
     },
     "cp6-pallet": {
     title: "CP6 Pallets",
-    main: "/src/assets/products/cp6-pallet-1.jpg",
+    main: cp6pallet1,
 
     gallery: [
-        "/src/assets/products/cp6-pallet-1.jpg",
-        "/src/assets/products/cp6-pallet-2.jpg",
-        "/src/assets/products/cp6-pallet-3.jpg",
-        "/src/assets/products/cp6-pallet-4.jpg"
+        cp6pallet1,
+        cp6pallet2,
+        cp6pallet3,
+        cp6pallet4
     ],
 
     description: [
@@ -295,13 +349,13 @@ export const productData = {
     },
     "cp7-pallet": {
   title: "CP7 Pallets",
-  main: "/src/assets/products/cp7-pallet-1.jpg",
+  main: cp7pallet1,
 
   gallery: [
-    "/src/assets/products/cp7-pallet-1.jpg",
-    "/src/assets/products/cp7-pallet-2.jpg",
-    "/src/assets/products/cp7-pallet-3.jpg",
-    "/src/assets/products/cp7-pallet-4.jpg"
+    cp7pallet1,
+    cp7pallet2,
+    cp7pallet3,
+    cp7pallet4
   ],
 
   description: [
@@ -330,13 +384,13 @@ export const productData = {
     },
     "cp8-pallet": {
   title: "CP8 Pallets",
-  main: "/src/assets/products/cp8-pallet-1-thumb.jpg",
+  main: cp8pallet1thumb,
 
   gallery: [
-    "/src/assets/products/cp8-pallet-1-thumb.jpg",
-    "/src/assets/products/cp8-pallet-2.jpg",
-    "/src/assets/products/cp8-pallet-3.jpg",
-    "/src/assets/products/cp8-pallet-4.jpg"
+    cp8pallet1thumb,
+    cp8pallet2,
+    cp8pallet3,
+    cp8pallet4
   ],
 
   description: [
@@ -365,10 +419,10 @@ export const productData = {
     },
 "gma-pallet": {
   title: "GMA Pallets",
-  main: "/src/assets/products/gma-pallet-1.jpg",
+  main: gmapallet1,
 
   gallery: [
-    "/src/assets/products/gma-pallet-1.jpg",
+    gmapallet1,
 
   ],
 
@@ -381,10 +435,10 @@ export const productData = {
 },
 "2way-pallet": {
   title: "2 Way Pallets",
-  main: "/src/assets/products/2way-pallet-1.jpg",
+  main: twowaypallet1,
 
   gallery: [
-    "/src/assets/products/2way-pallet-1.jpg",
+    twowaypallet1,
   ],
 
   description: [
@@ -395,10 +449,10 @@ export const productData = {
 },
 "4way-pallet": {
   title: "4 Way Pallets",
-  main: "/src/assets/products/4way-pallet-1.jpg",
+  main: fourwaypallet1,
 
   gallery: [
-    "/src/assets/products/4way-pallet-1.jpg",
+    fourwaypallet1,
   ],
 
   description: [
@@ -409,10 +463,10 @@ export const productData = {
 },
 "non-reversible-pallet": {
   title: "Non Reversible Pallets",
-  main: "/src/assets/products/non-reversible-pallet-1.jpg",
+  main: nonreversiblepallet1,
 
   gallery: [
-    "/src/assets/products/non-reversible-pallet-1.jpg",
+    nonreversiblepallet1,
   ],
 
   description: [
@@ -424,10 +478,10 @@ export const productData = {
 
 "reversible-pallet": {
   title: "Reversible Pallets",
-  main: "/src/assets/products/reversible-pallet-1.jpg",
+  main: reversiblepallet1,
 
   gallery: [
-    "/src/assets/products/reversible-pallet-1.jpg",
+    reversiblepallet1,
   ],
 
   description: [
@@ -439,13 +493,13 @@ export const productData = {
 },
 "wooden-crates": {
   title: "Wooden Crates & Boxes",
-  main: "/src/assets/products/wooden-crate-1.jpg",
+  main: woodencrate1,
 
   gallery: [
-    "/src/assets/products/wooden-crate-1.jpg",
-    "/src/assets/products/wooden-crate-2.jpg",
-    "/src/assets/products/wooden-crate-3.jpg",
-    "/src/assets/products/wooden-boxes-1.jpg"
+    woodencrate1,
+    woodencrate2,
+    woodencrate3,
+    woodencrate4
   ],
 
   description: [
@@ -457,10 +511,10 @@ export const productData = {
 },
 "pallet-collar": {
   title: "Pallet Collars",
-  main: "/src/assets/products/pallet-collar-1.jpg",
+  main: palletcolor,
 
   gallery: [
-    "/src/assets/products/pallet-collar-1.jpg",
+    palletcolor,
   ],
 
   description: [
@@ -474,10 +528,10 @@ export const productData = {
 },
 "refurbished-pallets": {
   title: "Refurbished Pallets",
-  main: "/src/assets/products/refurbished-pallet-1.jpg",
+  main: refurbishedpallet1,
 
   gallery: [
-    "/src/assets/products/refurbished-pallet-1.jpg",
+    refurbishedpallet1,
   ],
 
   description: [
