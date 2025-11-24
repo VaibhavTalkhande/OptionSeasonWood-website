@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-white shadow">
+    <header className="w-full top-0 left-0 z-50 bg-white shadow">
 
         {/* ----------- TOP BAR FOR LARGE SCREENS ONLY ----------- */}
         <div className="hidden md:flex w-full bg-white text-gray-700 justify-between items-center px-6 py-2 text-sm">
