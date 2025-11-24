@@ -15,16 +15,22 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-white shadow">
+    <header className="w-full top-0 left-0 z-50 bg-white shadow">
 
         {/* ----------- TOP BAR FOR LARGE SCREENS ONLY ----------- */}
-        <div className="hidden md:flex w-full bg-white text-gray-700 justify-between items-center px-6 py-2 text-sm">
-        <span>OPTION SEASON WOOD COMPANY</span>
-        <span>+91 93200 99981 | info@jaywoodpallet.com</span>
+        <div className="hidden xl:flex w-full bg-white text-gray-700 justify-between items-center px-6 py-2 text-sm">
+        <span className="font-medium">OPTION SEASON WOOD COMPANY</span>
+
+        <span className="flex gap-2">
+            <span>Harish Patel: 7020788177 |</span>
+            <span>Mohit Patel: 8275544766 |</span>
+            <span>optionseasonwood@gmail.com</span>
+        </span>
         </div>
 
+
         {/* ----------- TOP BAR FOR MOBILE ONLY ----------- */}
-        <div className="w-full md:hidden bg-gray-100 py-1 text-center text-xs text-gray-700">
+        <div className="w-full lg:hidden bg-gray-100 py-1 text-center text-xs text-gray-700">
         Est. 1966 | EPAL IND-006 & IND-016 | ISO 9001:2015
         </div>
 
