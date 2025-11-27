@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Links } from "react-router-dom";
-import img from "../assets/logo1.png"; 
+import img from "../assets/logo2.png"; 
 import { Menu, X, Warehouse, Award } from "lucide-react";
 
 export default function Navbar() {
@@ -54,7 +54,7 @@ export default function Navbar() {
               <Warehouse className="h-10 w-10 text-gray-600" />
               <div className="text-sm">
                 Established <br />
-                <span className="text-orange-600 font-semibold">in year 2012</span>
+                <span className="text-orange-600 font-semibold">in year 2008</span>
               </div>
             </div>
 

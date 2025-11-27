@@ -4,7 +4,7 @@ import {
   MapPin,
   MessageCircle,
 } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/footer.png";
 
 const primary = "#94592C";
 const accent = "#C4793F";
@@ -25,8 +25,8 @@ export default function Footer() {
           />
 
           <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-            Open Season Wood is a trusted manufacturer of EPAL wooden pallets,
-            custom crates & sustainable packaging solutions. With a commitment
+            Open Season Wood is a trusted manufacturer of high-quality wooden pallets,
+            custom crates & boxes & sustainable packaging solutions. With a commitment
             to quality and eco-friendly manufacturing, we deliver durable pallet
             solutions across India.
           </p>
@@ -134,13 +134,7 @@ export default function Footer() {
         {/* Right side */}
         <p className="text-center md:text-right">
           Crafted with ❤️ by{" "}
-          <a
-            href="https://quickfusion.vercel.app"
-            target="_blank"
-            className="text-white hover:text-amber-400 font-semibold"
-          >
             QuickFusion Innovations
-          </a>
         </p>
 
       </div>

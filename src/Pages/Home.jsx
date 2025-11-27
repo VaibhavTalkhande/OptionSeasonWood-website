@@ -9,6 +9,7 @@ import europalletthumb from "../assets/products/epal-euro-1-thumb.jpg";
 import woodenpalletthumb from "../assets/products/reversible-pallet-1-thumb.jpg";
 import cratethumb from "../assets/products/wooden-crate-1-thumb.jpg";
 import refurbishedthumb from "../assets/products/refurbished-pallet-1.jpg";
+import certificate from "../assets/certificate.jpeg";
 
 export default function Home() {
   const productsRef = useRef(null);
@@ -77,7 +78,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-4 text-gray-700 text-base sm:text-lg leading-relaxed max-w-xl"
             >
-              Option Season Wood Company is India's trusted manufacturer of EPAL pallets, industrial wooden pallets, crates and complete packaging solutions.
+              Option Season Wood Company is India's trusted manufacturer of high-quality wooden pallets, industrial wooden pallets, crates and complete packaging solutions.
             </motion.p>
 
             {/* Buttons */}
@@ -149,7 +150,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-4 text-lg text-gray-700 leading-relaxed"
             >
-              For over five decades, Option Season Wood has specialized in manufacturing durable wooden pallets...
+              For over decade, Option Season Wood has specialized in manufacturing durable wooden pallets...
             </motion.p>
 
             <motion.p
@@ -160,7 +161,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 text-gray-700 leading-relaxed"
             >
-              We operate multiple heat-treatment plants and follow ISPM15 & EPAL guidelines...
+              We operate multiple heat-treatment plants and follow ISPM15 & industry guidelines...
             </motion.p>
 
             <motion.div
@@ -274,15 +275,15 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="text-center text-gray-700 max-w-3xl mx-auto mt-4"
         >
-          We manufacture EPAL pallets, wooden pallets, crates, boxes, and more.
+          We manufacture high-qualiy wooden pallets, crates, boxes, and more.
         </motion.p>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-12 flex gap-8 items-center justify-center">
           {[
-            { title: "EPAL Pallets", img: europalletthumb , href: "/products" },
+            // { title: "EPAL Pallets", img: europalletthumb , href: "/products" },
             { title: "Wooden Pallets", img: woodenpalletthumb, href: "/products" },
             { title: "Crates & Boxes", img: cratethumb, href: "/products" },
-            { title: "Refurbished Pallets", img: refurbishedthumb, href: "/products" },
+            // { title: "Refurbished Pallets", img: refurbishedthumb, href: "/products" },
           ].map((p, idx) => (
             <motion.div
               key={idx}
@@ -294,7 +295,7 @@ export default function Home() {
             >
               <Link
                 to={p.href}
-                className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.03]"
+                className="max-w-[400px] group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.03]"
               >
                 <div className="p-6 flex items-center justify-center h-48 overflow-hidden">
                   <img src={p.img} className="object-contain max-h-full transition group-hover:scale-110" alt={p.title} />
@@ -356,10 +357,10 @@ export default function Home() {
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
           {[ 
-            { icon: <Award size={50} />, title: "12 Years of Expertise", desc: "Decades of high-quality manufacturing." },
-            { icon: <Boxes size={50} />, title: "1,400,000+ Pallets / Year", desc: "Large-scale industrial production." },
-            { icon: <Users size={50} />, title: "Skilled Workforce", desc: "Over 200+ trained professionals." },
-            { icon: <Warehouse size={50} />, title: "6+ Acre Facilities", desc: "Large operational manufacturing zones." }
+            { icon: <Award size={50} />, title: "18+ Years of Expertise", desc: "Decades of high-quality manufacturing." },
+            { icon: <Boxes size={50} />, title: "50000+ Pallets / Year", desc: "Large-scale industrial production." },
+            { icon: <Users size={50} />, title: "Skilled Workforce", desc: "Over 50+ trained professionals." },
+            { icon: <Warehouse size={50} />, title: "1+ Acre Facilities", desc: "Large operational manufacturing zones." }
           ].map((item, idx) => (
             <motion.div
             key={idx}
@@ -413,7 +414,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-center text-gray-700 max-w-3xl mx-auto mt-4"
         >
-          Certified and compliant with international manufacturing standards.
+          Certified and compliant with  manufacturing standards.
         </motion.p>
 
         <motion.div
@@ -425,7 +426,7 @@ export default function Home() {
           className="mt-10 flex justify-center"
         >
           <div className="rounded-xl shadow-lg overflow-hidden">
-            <img src="/src/assets/certificate.jpeg" className="w-full h-auto object-contain" />
+            <img src={certificate} className="w-full h-auto object-contain" />
           </div>
         </motion.div>
       </section>

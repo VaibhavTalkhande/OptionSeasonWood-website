@@ -21,10 +21,10 @@ import palletcolor from "../assets/products/pallet-collar-1-thumb.jpg";
 import refurbishedpallet1 from "../assets/products/refurbished-pallet-1.jpg";
 
 export default function Products() {
-  const epalRef = useRef(null);
-  const woodenRef = useRef(null);
+  // const epalRef = useRef(null);
   const cratesRef = useRef(null);
-  const refurbishedRef = useRef(null);
+  // const refurbishedRef = useRef(null);
+  const woodenRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,14 +36,14 @@ export default function Products() {
     window.scrollTo({ top: topPos, behavior: "smooth" });
   };
 
-  /* ------------------ PRODUCT DATA ------------------ */
+  // /* ------------------ PRODUCT DATA ------------------ */
 
-  const epalProducts = [
-    { name: "EPAL EURO Pallets", size: "(800 x 1200 x 144 mm)", image: epaleuro1, slug: "epal-euro" },
-    { name: "EPAL CP1 Pallets", size: "(1000 x 1200 x 138 mm)", image: cp1pallet1, slug: "cp1-pallet" },
-    { name: "EPAL CP3 Pallets", size: "(1140 x 1140 x 138 mm)", image: cp3pallet1, slug: "cp3-pallet" },
-    { name: "EPAL CP9 Pallets", size: "(1140 x 1140 x 156 mm)", image: cp9pallet1, slug: "cp9-pallet" },
-  ];
+  // const epalProducts = [
+  //   { name: "EPAL EURO Pallets", size: "(800 x 1200 x 144 mm)", image: epaleuro1, slug: "epal-euro" },
+  //   { name: "EPAL CP1 Pallets", size: "(1000 x 1200 x 138 mm)", image: cp1pallet1, slug: "cp1-pallet" },
+  //   { name: "EPAL CP3 Pallets", size: "(1140 x 1140 x 138 mm)", image: cp3pallet1, slug: "cp3-pallet" },
+  //   { name: "EPAL CP9 Pallets", size: "(1140 x 1140 x 156 mm)", image: cp9pallet1, slug: "cp9-pallet" },
+  // ];
 
   const woodenProducts = [
     { name: "CP2 Pallets", size: "(800 x 1200 x 141 mm)", image: cp2pallet1, slug: "cp2-pallet" },
@@ -64,9 +64,9 @@ export default function Products() {
     { name: "Pallet Collar / Boxes", image: palletcolor, slug: "pallet-collar" },
   ];
 
-  const refurbishedProducts = [
-    { name: "Refurbished Pallets", image: refurbishedpallet1, slug: "refurbished-pallets" },
-  ];
+  // const refurbishedProducts = [
+  //   { name: "Refurbished Pallets", image: refurbishedpallet1, slug: "refurbished-pallets" },
+  // ];
 
   /* ------------------ PRODUCT CARD ------------------ */
 
@@ -95,7 +95,7 @@ export default function Products() {
   );
 
   return (
-    <main className="w-full">
+    <main className="w-full mb-16">
 
       {/* ------------------ INTRO SECTION (Responsive like screenshot) ------------------ */}
       <section className="max-w-7xl mx-auto px-6 py-12">
@@ -106,13 +106,13 @@ export default function Products() {
         <div className="w-full mb-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap md:gap-4 gap-3">
 
-            <button
+            {/* <button
             onClick={() => scrollTo(epalRef)}
             className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             EPAL Pallets
-            </button>
+            </button> */}
 
             <button
             onClick={() => scrollTo(woodenRef)}
@@ -129,14 +129,14 @@ export default function Products() {
             >
             Crates & Boxes
             </button>
-
+{/* 
             <button
             onClick={() => scrollTo(refurbishedRef)}
             className="w-full md:w-auto px-5 py-2 border border-[#D98539] text-[#D98539] cursor-pointer 
                         font-semibold rounded md:hover:bg-orange-50 transition text-sm sm:text-base"
             >
             Refurbished
-            </button>
+            </button> */}
 
         </div>
         </div>
@@ -168,12 +168,12 @@ export default function Products() {
       </section>
 
       {/* ------------------ EPAL ------------------ */}
-      <section ref={epalRef} className="max-w-7xl mx-auto px-6 mt-20">
+      {/* <section ref={epalRef} className="max-w-7xl mx-auto px-6 mt-20">
         <h2 className="text-4xl font-bold text-[#C4793F] mb-10">EPAL Pallets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {epalProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>
-      </section>
+      </section> */}
       {/* ------------------ WOODEN ------------------ */}
       <section ref={woodenRef} className="max-w-7xl mx-auto px-6 mt-24">
         <h2 className="text-4xl font-bold text-[#C4793F] mb-10">Wooden Pallets</h2>
@@ -191,12 +191,12 @@ export default function Products() {
       </section>
 
       {/* ------------------ REFURBISHED ------------------ */}
-      <section ref={refurbishedRef} className="max-w-7xl mx-auto px-6 mt-24 mb-32">
+      {/* <section ref={refurbishedRef} className="max-w-7xl mx-auto px-6 mt-24 mb-32">
         <h2 className="text-4xl font-bold text-[#C4793F] mb-10">Refurbished Pallets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {refurbishedProducts.map((p, i) => <ProductCard key={i} item={p} />)}
         </div>
-      </section>
+      </section> */}
 
     </main>
   );
