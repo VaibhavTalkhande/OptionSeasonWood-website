@@ -1,6 +1,8 @@
 const primary = "#94592C";
 const accent = "#C4793F";
 import about from "../assets/gallery/4.jpeg";
+import mohit from "../assets/founder1.jpeg";
+import harish from "../assets/founder2.jpeg";
 import image from "../assets/logo.png";
 export default function About() {
   return (
@@ -68,11 +70,11 @@ export default function About() {
         <div className="max-w-7xl flex flex-col sm:flex-row justify-center items-center gap-12 mt-12">
             <FounderCard 
             name="Harish Patel" 
-            img={image}
+            img={harish}
             />
             <FounderCard 
             name="Mohit Patel" 
-            img={image} 
+            img={mohit} 
             />
         </div>
         </section>
