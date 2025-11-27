@@ -22,7 +22,7 @@ export default function About() {
             </h1>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Open Season Wood is a trusted Indian manufacturer of high-quality 
+              Option Season Wood is a trusted Indian manufacturer of high-quality 
               wooden pallets, crates, and industrial packaging solutions. With years 
               of expertise, we are committed to providing durable, safe, and 
               long-lasting wood packaging for industries across the country.
