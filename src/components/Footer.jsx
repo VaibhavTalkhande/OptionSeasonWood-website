@@ -20,12 +20,12 @@ export default function Footer() {
         <div>
           <img
             src={logo}
-            alt="Open Season Wood"
+            alt="Option Season Wood"
             className="w-28 sm:w-32 md:w-40 object-contain mb-4"
           />
 
           <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-            Open Season Wood is a trusted manufacturer of high-quality wooden pallets,
+            Option Season Wood is a trusted manufacturer of high-quality wooden pallets,
             custom crates & boxes & sustainable packaging solutions. With a commitment
             to quality and eco-friendly manufacturing, we deliver durable pallet
             solutions across India.
@@ -127,7 +127,7 @@ export default function Footer() {
 
         {/* Left side */}
         <p className="text-center md:text-left mb-2 md:mb-0">
-          © {new Date().getFullYear()} <span className="font-semibold">Open Season Wood</span>.
+          © {new Date().getFullYear()} <span className="font-semibold">Option Season Wood</span>.
           All rights reserved.
         </p>
 
