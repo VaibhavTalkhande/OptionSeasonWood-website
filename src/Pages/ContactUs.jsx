@@ -135,7 +135,7 @@ export default function Contact() {
             <input
               type="hidden"
               name="access_key"
-              value="YOUR_WEB3FORMS_KEY"
+              value={import.meta.env.VITE_WEB3FORMS_KEY}
             />
 
             <InputField label="Name" name="name" placeholder="Enter Name" />
