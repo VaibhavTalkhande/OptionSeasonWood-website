@@ -63,7 +63,7 @@ export default function About() {
         </h2>
 
         <p className="text-center text-gray-700 leading-relaxed max-w-3xl mx-auto mt-4 text-lg">
-            The leadership at Open Season Wood is driven by experience, dedication,
+            The leadership at Option Season Wood is driven by experience, dedication,
             and a strong commitment to quality and innovation.
         </p>
 
